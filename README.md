@@ -18,7 +18,6 @@ For important security considerations and responsibilities, please read our [Sec
    ```sh
    composer install
    ```
-   > For future features including sending an email of each generated password, we will need the `google/apiclient` package, but for version 1.0.0 it is not used
 
 3. Configure the environment:  
    - Create an `env.php` file and define the following key:  

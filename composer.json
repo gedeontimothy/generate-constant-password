@@ -17,8 +17,7 @@
 		}
 	],
 	"require": {
-		"php": "^8.0",
-		"google/apiclient": "^2.18"
+		"php": "^8.0"
 	},
 	"scripts": {
 		"post-root-package-install": [
