@@ -1,0 +1,25 @@
+#!/usr/bin/env php
+<?php
+
+use Core\CacheService;
+use Core\Password;
+use Core\Plateform;
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+
+
+$plateform = new Plateform(getPlateformName());
+
+$plateform->inputNameIfEmpty();
+
+$password = new Password($plateform);
+$pass = $password->generate(env('base_password', null) ?? readline('Password : '));
+
+;
+if($password->cache()){
+	echo "\n" . $pass . "\n";
+}
+else throw new Exception("Le Cache ne marche pas.", 1);
+
+// print_r(CacheService::datas());
