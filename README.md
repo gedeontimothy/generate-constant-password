@@ -55,7 +55,7 @@ For important security considerations and responsibilities, please read our [Sec
    ```
    Example:
    ```sh
-   php pass mybase123
+   Password: mybase123
    ```
 
 3. The generated password will be displayed:  
