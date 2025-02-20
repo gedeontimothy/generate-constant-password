@@ -14,8 +14,13 @@ For important security considerations and responsibilities, please read our [Sec
    git clone https://github.com/gedeontimothy/generate-constant-password.git
    cd generate-constant-password
    ```
+2. Install composer dependencies:  
+   ```sh
+   composer install
+   ```
+   > For future features including sending an email of each generated password, we will need the `google/apiclient` package, but for version 1.0.0 it is not used
 
-2. Configure the environment:  
+3. Configure the environment:  
    - Create an `env.php` file and define the following key:  
      ```php
      return [
@@ -23,7 +28,7 @@ For important security considerations and responsibilities, please read our [Sec
      ];
      ```
 
-3. Configure character values:  
+4. Configure character values:  
    - Modify the `config.php` file to define values for each letter:  
      ```php
      return [
