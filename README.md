@@ -3,12 +3,16 @@
 ## Description  
 This PHP CLI tool generates a unique password based on a constant pattern using a keyword provided as an argument, a base password, and an infix defined in a configuration file.
 
+## Security
+For important security considerations and responsibilities, please read our [Security Notice](SECURITY.md).
+
+
 ## Installation  
 
 1. Clone the project:  
    ```sh
-   git clone <repository-url>
-   cd <project-folder>
+   git clone https://github.com/gedeontimothy/generate-constant-password.git
+   cd generate-constant-password
    ```
 
 2. Configure the environment:  
